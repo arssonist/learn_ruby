@@ -21,12 +21,12 @@ class TestTemperature < MiniTest::Test
   def test_ftoc_converts_body_temperature
     assert_equal 37, ftoc(98.6)
   end
-
+  #
   def test_ftoc_convers_arbitrary_temperature
     assert_equal 20, ftoc(68)
   end
 
-  # Now this set of tests describes a different method,
+  # # Now this set of tests describes a different method,
   # not ftoc() anymore, but ctof().
   def test_ctof_converts_freezing_temperature
     assert_equal 32, ctof(0)
